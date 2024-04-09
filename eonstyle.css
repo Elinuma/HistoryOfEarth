@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.bgimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(2px) grayscale(50%) contrast(90%);
+}
+
+.header {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fade-down 1s;
+    }
+.header span {
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  width: 199px;
+        text-align: center;
+        background: linear-gradient(50deg, #e4f2ff, #e4f2ff);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 5px 3px 4px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        line-height: 1;
+        letter-spacing: 18px;
+        justify-content: space-around;
+        font-family: "Righteous", sans-serif;
+  animation: flip 2s 1s;
+  animation-delay: calc(.2s * var(--i))
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    box-sizing: border-box;
+    gap: 85px;
+    position: relative;
+}
+
+.img {
+    position: relative;
+    transition: transform 0.3s ease;
+    margin-top: 200px;
+}
+
+.img img {
+    width: 400px;
+    height: auto;
+
+}
+
+.img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.topInfo{
+    position: relative;
+    top: -490px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    background-color: rgba(248, 209, 165, 0.2);
+    border: 0;
+    padding: 0;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    font-size: 40px;
+    background: linear-gradient(50deg, #e4f2ff, #e4f2ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 3px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.bottomInfo {
+    position: relative;
+    bottom: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    background-color: rgba(173, 185, 238, 0.2);
+    border: 0;
+    padding: 0;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    font-size: 40px;
+    background: linear-gradient(50deg, #e4f2ff, #e4f2ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 3px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.img:hover .topInfo {
+    opacity: 1;
+}
+
+.img:hover .bottomInfo {
+    opacity: 1;
+}
+
+.josefin-sans-font {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+/* animation */
+@keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform:  translateY(0px) scale(0.9);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }
+  
+  @keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(0px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(auto) scale(1);
+    }
+}
+
+  .home-button {
+    position: fixed;
+    bottom: 11%;
+    left: 50%;
+    width: 100px;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: #e4f2ff;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    transition: transform 0.3s;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.home-button:hover {
+    transform: scale(1.1);
+    transform: translateX(-50%) translateY(-5px);
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.home-button.fade-in {
+    animation: fade-in 0.5s;
+}
+
+.img {
+    animation: fade-up 1s;
+}
+
+/* a */
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}

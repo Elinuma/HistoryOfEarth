@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    filter: grayscale(40%) blur(1px)
+  }
+  h1 {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    font-size: 100px;
+    text-align: center;
+    background: linear-gradient(50deg, #e4f2ff, #e4f2ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 3px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    line-height: 1;
+    letter-spacing: 30px;
+    font-family: "Oswald", sans-serif;
+    animation: float 3s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+      transform: translate(-42%, -50%) translateY(0px);
+    }
+    50% {
+      transform: translate(-42%, -50%) translateY(-20px);
+    }
+    100% {
+      transform: translate(-42%, -50%) translateY(0px);
+    }
+  }
+  .click {
+    position: absolute;
+    top: calc(30% + 259px);
+    left: 49%;
+    transform: translate(-50%);
+    color: #e4f2ff;
+    border-radius: 5px;
+    font-size: 25px;
+    z-index: 1;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click2 {
+    position: absolute;
+    top: calc(0% + 259px);
+    left: 39%;
+    transform: translate(-50%);
+    color: #e4f2ff;
+    border-radius: 5px;
+    font-size: 35px;
+    z-index: 1;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click3 {
+    position: absolute;
+    top: calc(0% + 259px);
+    left: 57%;
+    transform: translate(-50%);
+    color: #e4f2ff;
+    border-radius: 5px;
+    font-size: 35px;
+    z-index: 1;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click4 {
+    position: absolute;
+    top: calc(7% + 259px);
+    left: 39%;
+    transform: translate(-50%);
+    color: #e4f2ff;
+    border-radius: 5px;
+    font-size: 35px;
+    z-index: 1;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .click5 {
+    position: absolute;
+    top: calc(7% + 259px);
+    left: 57%;
+    transform: translate(-50%);
+    color: #e4f2ff;
+    border-radius: 5px;
+    font-size: 35px;
+    z-index: 1;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click6 {
+    position: absolute;
+    top: calc(14% + 259px);
+    left: 39%;
+    transform: translate(-50%);
+    color: #e4f2ff;
+    border-radius: 5px;
+    font-size: 35px;
+    z-index: 1;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click7 {
+    position: absolute;
+    top: calc(14% + 259px);
+    left: 57%;
+    transform: translate(-50%);
+    color: #e4f2ff;
+    border-radius: 5px;
+    font-size: 35px;
+    z-index: 1;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click8 {
+    position: absolute;
+    top: calc(21% + 259px);
+    left: 49%;
+    transform: translate(-50%);
+    color: #e4f2ff;
+    border-radius: 5px;
+    font-size: 35px;
+    z-index: 1;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .click:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  
+}
+.click2:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click3:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click4:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click5:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click6:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click7:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  .click8:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
